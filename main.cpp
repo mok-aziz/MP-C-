@@ -11,13 +11,12 @@
 #define ENABLE_VIRTUAL_TERMINAL_PROCESSING 0x0004
 #endif
 
-
+#include "Board.h"
 #include "Entities/Player.h"
 #include "Buildings/Wall.h"
 #include "Buildings/TownHall.h"
 #include "Buildings/GoldMine.h"
 #include "Buildings/ElixirCollector.h"
-//hhhhhhhhhhhhhhhhhhhhhhh
 const int MAP_W = 40;
 const int MAP_H = 20;
 
