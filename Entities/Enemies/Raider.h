@@ -17,9 +17,7 @@ private:
 public:
     Raider(Position pos);
     virtual ~Raider() {}
-    void Update(Board& board) override;
-    bool isMarkedForDeletion() const { return markedForDeletion; }
-    void markForDeletion()           { markedForDeletion = true; }
+    
 };
 
 #endif
