@@ -17,7 +17,7 @@
 #include "Buildings/TownHall.h"
 #include "Buildings/GoldMine.h"
 #include "Buildings/ElixirCollector.h"
-
+//hhhhhhhhhhhhhhhhhhhhhhh
 const int MAP_W = 40;
 const int MAP_H = 20;
 
