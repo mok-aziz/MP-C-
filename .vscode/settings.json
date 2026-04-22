@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^g\\+\\+ -o main\\.exe main\\.cpp Board\\.cpp Position\\.cpp Resources\\.cpp Buildings/Building\\.cpp Buildings/Barrack\\.cpp Buildings/Wall\\.cpp Buildings/TownHall\\.cpp Buildings/GoldMine\\.cpp Buildings/ElixirCollector\\.cpp Buildings/ResourceGenerator\\.cpp Entities/Entity\\.cpp Entities/Npc\\.cpp Entities/Player\\.cpp Entities/Troops/Troop\\.cpp Entities/Troops/Barbarian\\.cpp Entities/Troops/Archer\\.cpp Entities/Enemies/Enemy\\.cpp Entities/Enemies/Raider\\.cpp Entities/Enemies/Bomberman\\.cpp -I\\. -I\\./Buildings -I\\./Entities -I\\./Entities/Enemies -I\\./Entities/Troops -std=c\\+\\+17$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}
