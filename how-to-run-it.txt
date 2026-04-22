@@ -1,0 +1,15 @@
+1-download the file
+2-copy the path of the file you downloaded
+3-go to PowerShell write : cd "path of the file"
+4-paste this and hit enter :
+g++ -o main.exe `
+main.cpp `
+Board.cpp Position.cpp Resources.cpp `
+Buildings/Building.cpp Buildings/Wall.cpp Buildings/TownHall.cpp `
+Buildings/GoldMine.cpp Buildings/ElixirCollector.cpp Buildings/ResourceGenerator.cpp `
+Entities/Entity.cpp Entities/Npc.cpp Entities/Player.cpp `
+Entities/Enemies/Enemy.cpp Entities/Enemies/Raider.cpp `
+-I. -I./Buildings -I./Entities -I./Entities/Enemies `
+-std=c++17
+
+5-paste this and hit enter and the game will run : .\main.exe
