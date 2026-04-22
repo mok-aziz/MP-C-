@@ -13,4 +13,4 @@ Entities/Enemies/Enemy.cpp Entities/Enemies/Raider.cpp Entities/Enemies/Bomberma
 -I. -I./Buildings -I./Entities -I./Entities/Enemies -I./Entities/Troops `
 -std=c++17
 
-5-paste this and hit enter and the game will run : .\main.exe
+5-paste this ".\main.exe"  and hit enter and the game will run
