@@ -1,6 +1,7 @@
 #include "Enemy.h"
 #include "../../Board.h"
 #include "../../Buildings/TownHall.h"
+#include "../../Buildings/Wall.h"
 #include <cmath>
 #include <algorithm>
 
@@ -31,11 +32,21 @@ void Enemy::Update(Board& board) {
     else
         nextPos.y += (dy > 0) ? 1 : -1;
 
+    Building* blockingBuilding = nullptr;
     for (Building* b : board.getBuildings()) {
         if (b->collidesWith(nextPos)) {
-            b->takeDamage(attackDamage); // Attack the blocking building
-            return;
+            blockingBuilding = b;
+            break;
         }
+    }
+
+    if (blockingBuilding) {
+        if (dynamic_cast<Wall*>(blockingBuilding)) {
+            board.removeBuilding(blockingBuilding);
+        } else {
+            blockingBuilding->takeDamage(attackDamage); // Attack non-wall blockers normally
+        }
+        return;
     }
 
     position = nextPos;
